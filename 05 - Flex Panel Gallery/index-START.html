@@ -97,11 +97,6 @@
             font-size:40px;
             flex: 5; /* Take up 5 times the space as normal */
         }
-
-        .cta {
-            color:white;
-            text-decoration: none;
-        }
     </style>
 </head>
 <body>
@@ -147,7 +142,7 @@
         this.classList.toggle('open');
     }
     function toggleActive(e){
-        // For browser compatibility. Some say flex-grow, others say flex. 
+        // For browser compatibility. Some say flex-grow, others say flex.
         if (!e.propertyName.includes('flex')) return;
         this.classList.toggle('open-active');
     }
